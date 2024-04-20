@@ -810,7 +810,7 @@ p {
 .exclusive .carousel-control-prev i,
 .exclusive .carousel-control-next i {
   color: white;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
   padding: 10px;
   border-radius: 50%;
 }
