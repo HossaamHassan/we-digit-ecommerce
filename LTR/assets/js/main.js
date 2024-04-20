@@ -41,3 +41,41 @@ $(function () {
 
   var accordion = new Accordion($("#accordion"), false);
 });
+
+const imgs = document.querySelectorAll(".img-select a");
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+  imgItem.addEventListener("click", (event) => {
+    event.preventDefault();
+    imgId = imgItem.dataset.id;
+    slideImage();
+  });
+});
+
+function slideImage() {
+  const displayWidth = document.querySelector(
+    ".img-showcase img:first-child"
+  ).clientWidth;
+
+  document.querySelector(".img-showcase").style.transform = `translateX(${
+    -(imgId - 1) * displayWidth
+  }px)`;
+}
+
+window.addEventListener("resize", slideImage);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.querySelector(".input-group input");
+  const plus = document.querySelector(".input-group .plus");
+  const minus = document.querySelector(".input-group .minus");
+
+  plus.addEventListener("click", function () {
+    input.stepUp();
+  });
+
+  minus.addEventListener("click", function () {
+    input.stepDown();
+  });
+});
