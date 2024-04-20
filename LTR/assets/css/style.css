@@ -668,8 +668,11 @@ p {
 /* End Special */
 /* Start Login */
 .login .pic {
-  background-color: var(--second-color);
+  background-color: #ececec;
   height: 100vh;
+}
+.login .pic img {
+  width: 85%;
 }
 .login .pic-sign {
   height: 100% !important;
@@ -681,7 +684,6 @@ p {
 }
 .login .sm-pic {
   width: 150px;
-  background-color: var(--second-color);
   padding: 10px;
   border-radius: 10px;
 }
@@ -730,7 +732,7 @@ p {
   object-fit: cover;
 }
 .form-container #contactButton {
-  background-color: var(--second-color) !important;
+  background-color: var(--first-color) !important;
   color: white !important;
 }
 .form-container #contactButton:hover {
@@ -751,6 +753,17 @@ p {
 }
 .form-container .new:hover {
   text-decoration: underline;
+}
+.form-container .contact-info .more {
+  top: -10%;
+  left: 5%;
+  background-color: white;
+  font-size: 14px;
+}
+.form-container .contact-info i {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
 }
 /* End Login */
 /* Start Exclusive */
