@@ -32,7 +32,7 @@
               class="cart d-flex gap-4 align-items-center justify-content-center"
             >
               <div style="cursor: pointer" class="list" id="bar">
-                <i class="fa-solid fa-bars text-white"></i>
+                <i class="fa-solid fa-bars"></i>
               </div>
             </div>
             <a href="./index.html" class="logo d-flex gap-2 align-items-center">
@@ -57,16 +57,27 @@
                   aria-label="Search"
                 />
               </div>
+              <button
+                type="button"
+                class="btn btn-primary text-uppercase"
+                data-mdb-ripple-init
+              >
+                Search
+              </button>
             </div>
             <div class="icons d-flex align-items-center gap-3">
-              <a href="#" class="text-white fw-bold"> English </a>
+              <a href="#" class="text-black fw-bold"> English </a>
               <a href="./login/" class="user d-flex align-items-center">
-                <i class="fa-regular fa-user text-white"></i>
+                <i class="fa-regular fa-user text-black"></i>
               </a>
               <div
                 class="cart-shopping position-relative d-flex align-items-center"
               >
-                <i class="fa-solid fa-cart-shopping text-white"></i>
+                <img
+                  src="./assets/img/shopping-bag.png"
+                  class="mw-100"
+                  alt=""
+                />
                 <span class="icon-cart-span">0</span>
               </div>
             </div>
@@ -74,6 +85,29 @@
         </div>
       </div>
     </nav>
+    <div class="nav-two">
+      <div class="container">
+        <ul
+          class="d-flex align-items-center justify-content-center gap-3 py-3 mb-0"
+        >
+          <li class="link-two">
+            <a href="./index.html" class="text-uppercase"> Home </a>
+          </li>
+          <li>
+            <a href="#" class="text-uppercase"> About Us</a>
+          </li>
+          <li>
+            <a href="./contact-us/" class="text-uppercase"> Contact Us </a>
+          </li>
+          <li>
+            <a href="#" class="text-uppercase"> Blog </a>
+          </li>
+          <li>
+            <a href="./products/" class="text-uppercase"> Special Offer </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- End Navbar -->
     <!-- Start Sidebar -->
     <div class="sidebar">
@@ -2030,7 +2064,7 @@
             data-bs-target="#carouselExampleFade"
             data-bs-slide="next"
           >
-            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-left"></i>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
