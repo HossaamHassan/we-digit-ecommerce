@@ -1,8 +1,17 @@
 body {
   direction: rtl;
 }
-nav {
-  direction: ltr;
+.navbar .search button {
+  right: -8%;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+/* Sidebar */
+.sidebar .content {
+  right: -100%;
+}
+.sidebar .appear {
+  right: 0;
 }
 /* footer */
 .footer h2::after {
