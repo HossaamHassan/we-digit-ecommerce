@@ -392,6 +392,23 @@ p {
 .product-slider .views:hover {
   background-color: var(--fourth-color);
 }
+.product-slider .filter {
+  cursor: pointer;
+}
+.sidebar .filter .form-check {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.sidebar .filter .cat h5 {
+  font-size: 18px;
+}
+.sidebar .filter .cat input:checked {
+  background-color: var(--first-color);
+}
+.sidebar .filter .cat label {
+  font-size: 14px;
+}
 /* Start Product Details */
 .product-details .price {
   font-size: 25px;
