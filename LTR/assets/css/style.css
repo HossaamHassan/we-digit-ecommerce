@@ -921,11 +921,6 @@ p {
 }
 /* End Cart */
 /* Start Form */
-.form-check {
-  width: 138px;
-  height: 55px;
-  padding-left: 2.5rem !important;
-}
 .form-container .radio {
   height: 16px !important;
   color: unset !important;

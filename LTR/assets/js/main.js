@@ -1,16 +1,13 @@
 // Start Burger Menu
 const listBar = document.getElementById("bar");
-const listBarOne = document.getElementById("bar-one");
+
 const sideBar = document.querySelector(".content");
-const sideBarOne = document.querySelector(".content-one");
 const closeBtn = document.querySelector(".close");
 console.log(sideBar);
 listBar.addEventListener("click", () => {
   sideBar.classList.toggle("appear");
 });
-listBarOne.addEventListener("click", () => {
-  sideBarOne.classList.toggle("appear");
-});
+
 closeBtn.addEventListener("click", () => {
   sideBar.classList.remove("appear");
 });
@@ -18,12 +15,6 @@ document.addEventListener("keyup", (e) => {
   console.log(e.key);
   if (e.key === "Escape") {
     sideBar.classList.remove("appear");
-  }
-});
-document.addEventListener("keyup", (e) => {
-  console.log(e.key);
-  if (e.key === "Escape") {
-    sideBarOne.classList.remove("appear");
   }
 });
 // End Burger Menu
@@ -66,13 +57,9 @@ imgBtns.forEach((imgItem) => {
 });
 
 function slideImage() {
-  const displayWidth = document.querySelector(
-    ".img-showcase img:first-child"
-  ).clientWidth;
+  const displayWidth = document.querySelector(".img-showcase img:first-child").clientWidth;
 
-  document.querySelector(".img-showcase").style.transform = `translateX(${
-    -(imgId - 1) * displayWidth
-  }px)`;
+  document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth}px)`;
 }
 
 window.addEventListener("resize", slideImage);
