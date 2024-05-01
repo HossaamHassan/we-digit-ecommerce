@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/Cart-table.css" />
+    <link rel="stylesheet" href="../assets/css/style-rtl.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Wishlist | We-Digit</title>
+    <title>Cart | We-Digit</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -157,11 +157,11 @@
     <!-- Start Cart -->
     <div class="order mt-5 mb-5">
       <div class="container">
-        <ul class="head d-flex align-items-center justify-content-around gap-4">
-          <li style="flex: 0.14" class="text-center fw-bold">Product</li>
-          <li class="text-center fw-bold">Price</li>
-          <li class="text-center fw-bold">Stock</li>
-          <li></li>
+        <ul class="head d-flex align-items-center justify-content-around">
+          <li style="flex: 0.2" class="text-center fw-bold">Product</li>
+          <li class="fw-bold">Price</li>
+          <li class="fw-bold">Quantity</li>
+          <li class="fw-bold">Total</li>
         </ul>
         <div class="row gap-4">
           <div class="col-lg-12">
@@ -181,33 +181,20 @@
                 <div class="old" style="color: var(--second-color)">200 SAR</div>
                 <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
               </div>
-              <div class="status"><span class="text-success fw-bold">In stock</span></div>
-              <button style="width: fit-content" class="btn shop-btn d-flex align-items-center gap-2">
-                <i class="fa-solid fa-bag-shopping"></i> Add To Cart
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div
-              class="border rounded orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
-            >
-              <div class="pic d-flex align-items-center gap-3 flex-column flex-md-row">
-                <a
-                  class="rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
-                  href="#"
-                  ><i class="fa-solid fa-trash-can"></i
-                ></a>
-                <img class="rounded" src="../assets/img/cam.jpg" alt="" />
-                <p class="fw-bold">Camera Nikon</p>
+              <div class="purchase-info">
+                <div class="input-group d-flex align-items-center gap-2">
+                  <span class="minus">
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
+                  <input type="number" min="0" value="1" />
+                  <span class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
               </div>
-              <div class="price d-flex align-items-center justify-content-center gap-2 pt-1">
-                <div class="old" style="color: var(--second-color)">200 SAR</div>
-                <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
+              <div class="total">
+                <span>200 SAR</span>
               </div>
-              <div class="status"><span class="text-danger fw-bold">Out of stock</span></div>
-              <button style="width: fit-content" class="btn shop-btn d-flex align-items-center gap-2">
-                <i class="fa-solid fa-bag-shopping"></i> Add To Cart
-              </button>
             </div>
           </div>
         </div>

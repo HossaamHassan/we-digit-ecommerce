@@ -174,8 +174,7 @@ p {
   left: -100%;
   width: 25%;
   height: 100vh;
-  box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.15),
-    -10px 0px 15px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.15), -10px 0px 15px -5px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 @media (max-width: 992px) {
@@ -857,6 +856,155 @@ p {
   border-color: var(--first-color) !important;
 }
 /* End Products */
+/* Start Order */
+.order .orders .pic a {
+  transition: var(--main-transition);
+  color: var(--first-color);
+}
+
+.order .orders .pic img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+}
+
+.order .orders .desc p {
+  width: 200px;
+  font-size: 12px;
+}
+@media (max-width: 992px) {
+  .order .orders {
+    gap: 3rem;
+  }
+
+  .order .orders h5 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  .order .orders .pic img {
+    width: 100px;
+  }
+
+  .order .orders .status {
+    width: 228px;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .order .head {
+    display: none !important;
+  }
+  .order .orders {
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .order .orders .pic a {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .order .orders .pic img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .order .orders .desc p {
+    font-size: 16px;
+    width: 225px;
+  }
+
+  .order .orders h5,
+  .order .orders .status {
+    font-size: inherit;
+  }
+}
+/* End Cart */
+/* Start Form */
+.form-container .radio {
+  height: 16px !important;
+  color: unset !important;
+  font-size: unset !important;
+  border-radius: 50% !important;
+  outline: unset !important;
+  font-size: unset !important;
+  box-shadow: unset !important;
+  -webkit-box-shadow: unset !important;
+}
+.contact-info form input:not(:last-child),
+.form-container form input:not(:last-child),
+.check,
+.form-container form select {
+  height: 58px;
+  /* background: #fff !important; */
+  color: #000 !important;
+  font-size: 18px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+}
+.contact-info form textarea,
+.form-container form textarea {
+  background: #fff !important;
+  color: #000 !important;
+  font-size: 18px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+}
+.contact-info form input:focus,
+.contact-info form textarea:focus,
+.form-container form input:focus,
+.form-container form textarea:focus,
+.form-container form select:focus {
+  border-color: var(--second-color);
+  outline: none;
+  box-shadow: 0 1px 0 -1px var(--first-color);
+}
+.contact-info .pic img,
+.form-container .pic img {
+  height: 400px;
+  object-fit: cover;
+}
+.contact-info .info,
+.form-container .info {
+  width: 100%;
+  margin: auto;
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+@media (max-width: 992px) {
+  .contact-info .info,
+  .form-container .info {
+    margin: unset !important;
+    font-size: 14px;
+  }
+  .contact-info .pic img,
+  .form-container .pic img {
+    display: none;
+  }
+  .payments .pic img {
+    display: block;
+  }
+}
+#contactButton {
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Form */
 /* Start Footer */
 .footer {
   background-color: var(--second-color);
