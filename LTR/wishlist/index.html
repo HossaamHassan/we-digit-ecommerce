@@ -157,11 +157,11 @@
     <!-- Start Cart -->
     <div class="order mt-5 mb-5">
       <div class="container">
-        <ul class="head d-flex align-items-center justify-content-around">
-          <li style="flex: 0.2" class="text-center fw-bold">Product</li>
-          <li class="fw-bold">Price</li>
-          <li class="fw-bold">Quantity</li>
-          <li class="fw-bold">Total</li>
+        <ul class="head d-flex align-items-center justify-content-around gap-4">
+          <li style="flex: 0.14" class="text-center fw-bold">Product</li>
+          <li class="text-center fw-bold">Price</li>
+          <li class="text-center fw-bold">Stock</li>
+          <li></li>
         </ul>
         <div class="row gap-4">
           <div class="col-lg-12">
@@ -181,123 +181,39 @@
                 <div class="old" style="color: var(--second-color)">200 SAR</div>
                 <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
               </div>
-              <div class="purchase-info">
-                <div class="input-group d-flex align-items-center gap-2">
-                  <span class="minus">
-                    <i class="fa-solid fa-minus"></i>
-                  </span>
-                  <input type="number" min="0" value="1" />
-                  <span class="plus">
-                    <i class="fa-solid fa-plus"></i>
-                  </span>
-                </div>
+              <div class="status"><span class="text-success fw-bold">In stock</span></div>
+              <button style="width: fit-content" class="btn shop-btn d-flex align-items-center gap-2">
+                <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div
+              class="border rounded orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+            >
+              <div class="pic d-flex align-items-center gap-3 flex-column flex-md-row">
+                <a
+                  class="rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                  href="#"
+                  ><i class="fa-solid fa-trash-can"></i
+                ></a>
+                <img class="rounded" src="../assets/img/cam.jpg" alt="" />
+                <p class="fw-bold">Camera Nikon</p>
               </div>
-              <div class="total">
-                <span>200 SAR</span>
+              <div class="price d-flex align-items-center justify-content-center gap-2 pt-1">
+                <div class="old" style="color: var(--second-color)">200 SAR</div>
+                <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
               </div>
+              <div class="status"><span class="text-danger fw-bold">Out of stock</span></div>
+              <button style="width: fit-content" class="btn shop-btn d-flex align-items-center gap-2">
+                <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Cart -->
-    <!-- Start totals -->
-    <div class="totals">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="coupon">
-              <form action="">
-                <div class="form-group d-flex align-items-center">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Apply Coupon"
-                  />
-                  <button type="button" class="btn shop-btn" style="margin-left: -20px">Buy Now</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <!-- <div class="bill">
-              <div class="row">
-                <div class="col-4">
-                  <ul>
-                    <li>Cart Totals</li>
-                    <li>Shipping</li>
-                    <li>Subtotal</li>
-                  </ul>
-                </div>
-                <div class="col-4">
-                  <ul>
-                    <li>Cart Totals</li>
-                    <li>
-                      <ul>
-                        <li>Shipping Fee</li>
-                        <li>Total ( Tax Excl.)</li>
-                        <li>Total ( Tax Incl.)</li>
-                        <li>Taxes</li>
-                        <li>
-                          Shipping Enter Your Address To View Shipping Options.
-                          Calculate Shipping
-                        </li>
-                      </ul>
-                    </li>
-                    <li>Subtotal</li>
-                  </ul>
-                </div>
-                <div class="col-4">
-                  <ul>
-                    <li>$128.70</li>
-                    <li>
-                      <ul>
-                        <li>Fee</li>
-                        <li>15 SAR</li>
-                        <li>15 SAR</li>
-                        <li>15 SAR</li>
-                        <li>15 SAR</li>
-                      </ul>
-                    </li>
-                    <li>162 SAR</li>
-                  </ul>
-                </div>
-              </div>
-            </div> -->
-            <table class="table table-bordered text-center text-md-start cart-table-box">
-              <thead>
-                <tr>
-                  <th scope="col" class="m-auto cart-table">Cart Totals</th>
-                  <th scope="col" class="m-auto"></th>
-                  <th scope="col" class="m-auto cart-table">128 SAR</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Shipping</th>
-                  <th style="font-size: 14px" scope="col" class="m-auto lh-lg text-muted fw-normal">
-                    <p>Shipping Fee</p>
-                    <p>Total ( Tax Excl.)</p>
-                    <p>Total ( Tax Incl.)</p>
-                    <p>Taxes</p>
-                    <p>Shipping Enter Your Address To View Shipping Options. Calculate Shipping</p>
-                  </th>
-                  <th scope="col" class="m-auto"></th>
-                </tr>
-                <tr>
-                  <th scope="row">Subtotal</th>
-                  <td></td>
-                  <td>162 SAR</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End totals -->
     <!-- Start Footer -->
     <section class="footer py-5">
       <div class="container">

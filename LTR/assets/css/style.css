@@ -851,7 +851,6 @@ p {
   border-color: var(--first-color) !important;
 }
 /* End Products */
-/* Start Cart */
 /* Start Order */
 .order .orders .pic a {
   transition: var(--main-transition);
@@ -889,6 +888,9 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .order .head {
+    display: none !important;
+  }
   .order .orders {
     flex-direction: column;
     gap: 0.7rem;
@@ -917,10 +919,92 @@ p {
     font-size: inherit;
   }
 }
-
-/* End Order *
-
 /* End Cart */
+/* Start Form */
+.form-check {
+  width: 138px;
+  height: 55px;
+  padding-left: 2.5rem !important;
+}
+.form-container .radio {
+  height: 16px !important;
+  color: unset !important;
+  font-size: unset !important;
+  border-radius: 50% !important;
+  outline: unset !important;
+  font-size: unset !important;
+  box-shadow: unset !important;
+  -webkit-box-shadow: unset !important;
+}
+.contact-info form input:not(:last-child),
+.form-container form input:not(:last-child),
+.check,
+.form-container form select {
+  height: 58px;
+  /* background: #fff !important; */
+  color: #000 !important;
+  font-size: 18px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+}
+.contact-info form textarea,
+.form-container form textarea {
+  background: #fff !important;
+  color: #000 !important;
+  font-size: 18px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+}
+.contact-info form input:focus,
+.contact-info form textarea:focus,
+.form-container form input:focus,
+.form-container form textarea:focus,
+.form-container form select:focus {
+  border-color: var(--second-color);
+  outline: none;
+  box-shadow: 0 1px 0 -1px var(--first-color);
+}
+.contact-info .pic img,
+.form-container .pic img {
+  height: 400px;
+  object-fit: cover;
+}
+.contact-info .info,
+.form-container .info {
+  width: 100%;
+  margin: auto;
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+@media (max-width: 992px) {
+  .contact-info .info,
+  .form-container .info {
+    margin: unset !important;
+    font-size: 14px;
+  }
+  .contact-info .pic img,
+  .form-container .pic img {
+    display: none;
+  }
+  .payments .pic img {
+    display: block;
+  }
+}
+#contactButton {
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Form */
 /* Start Footer */
 .footer {
   background-color: var(--second-color);
