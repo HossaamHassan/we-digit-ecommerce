@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/Cart-table.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,26 +25,17 @@
       <div class="navbar">
         <div class="container d-flex flex-column flex-lg-row flex-md-row">
           <div style="flex: 1" class="all d-flex justify-content-between">
-            <div
-              class="cart d-flex gap-4 align-items-center justify-content-center"
-            >
+            <div class="cart d-flex gap-4 align-items-center justify-content-center">
               <div style="cursor: pointer" class="list" id="bar">
                 <i class="fa-solid fa-bars"></i>
               </div>
             </div>
             <a href="./index.html" class="logo d-flex gap-2 align-items-center">
               <div class="pic">
-                <img
-                  style="width: 130px"
-                  class="mw-100"
-                  src="../assets/img/logo.png"
-                  alt=""
-                />
+                <img style="width: 130px" class="mw-100" src="../assets/img/logo.png" alt="" />
               </div>
             </a>
-            <div
-              class="search d-flex align-items-center justify-content-center"
-            >
+            <div class="search d-flex align-items-center justify-content-center">
               <div class="form-outline" style="flex: 1" data-mdb-input-init>
                 <input
                   type="search"
@@ -56,27 +45,15 @@
                   aria-label="Search"
                 />
               </div>
-              <button
-                type="button"
-                class="btn btn-primary text-uppercase"
-                data-mdb-ripple-init
-              >
-                Search
-              </button>
+              <button type="button" class="btn btn-primary text-uppercase" data-mdb-ripple-init>Search</button>
             </div>
             <div class="icons d-flex align-items-center gap-3">
               <a href="#" class="text-black fw-bold"> English </a>
               <a href="./login/" class="user d-flex align-items-center">
                 <i class="fa-regular fa-user text-black"></i>
               </a>
-              <div
-                class="cart-shopping position-relative d-flex align-items-center"
-              >
-                <img
-                  src="../assets/img/shopping-bag.png"
-                  class="mw-100"
-                  alt=""
-                />
+              <div class="cart-shopping position-relative d-flex align-items-center">
+                <img src="../assets/img/shopping-bag.png" class="mw-100" alt="" />
                 <span class="icon-cart-span">0</span>
               </div>
             </div>
@@ -86,9 +63,7 @@
     </nav>
     <div class="nav-two">
       <div class="container">
-        <ul
-          class="d-flex align-items-center justify-content-center gap-3 py-3 mb-0"
-        >
+        <ul class="d-flex align-items-center justify-content-center gap-3 py-3 mb-0">
           <li class="link-two">
             <a href="../index.html" class="text-uppercase"> Home </a>
           </li>
@@ -112,8 +87,8 @@
     <div class="paths py-4">
       <div class="container">
         <p style="gap: 0.5rem" class="d-flex align-items-center">
-          <span>Home</span> <i class="fa-solid fa-chevron-right"></i>
-          <span>Cameras</span> <i class="fa-solid fa-chevron-right"></i>
+          <span>Home</span> <i class="fa-solid fa-chevron-right"></i> <span>Cameras</span>
+          <i class="fa-solid fa-chevron-right"></i>
           <span>Sony</span>
         </p>
       </div>
@@ -122,29 +97,16 @@
     <!-- Start Sidebar -->
     <div class="sidebar">
       <div class="content">
-        <div
-          class="close d-flex justify-content-between align-items-center border-bottom p-2"
-        >
+        <div class="close d-flex justify-content-between align-items-center border-bottom p-2">
           <div class="pic">
-            <img
-              style="width: 100px"
-              class="mw-100"
-              src="../assets/img/logo.png"
-              alt=""
-            />
+            <img style="width: 100px" class="mw-100" src="../assets/img/logo.png" alt="" />
           </div>
           <i class="fa-solid fa-x m-0" id="close"></i>
         </div>
         <ul class="d-flex flex-column pe-2 p-0">
           <li>
-            <div
-              class="search d-flex align-items-center justify-content-center m-auto"
-            >
-              <div
-                class="form-outline position-relative side-link"
-                style="flex: 1"
-                data-mdb-input-init
-              >
+            <div class="search d-flex align-items-center justify-content-center m-auto">
+              <div class="form-outline position-relative side-link" style="flex: 1" data-mdb-input-init>
                 <input
                   style="border: none"
                   type="search"
@@ -171,9 +133,7 @@
           <li>
             <ul id="accordion" class="accordion">
               <li>
-                <div class="link side-link">
-                  <span>Accessories</span><i class="fa fa-chevron-down"></i>
-                </div>
+                <div class="link side-link"><span>Accessories</span><i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                   <li><a href="#">Lorem</a></li>
                   <li><a href="#">Lorem</a></li>
@@ -181,9 +141,7 @@
                 </ul>
               </li>
               <li>
-                <div class="link side-link">
-                  <span>Cameras</span><i class="fa fa-chevron-down"></i>
-                </div>
+                <div class="link side-link"><span>Cameras</span><i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                   <li><a href="#">Lorem</a></li>
                   <li><a href="#">Lorem</a></li>
@@ -197,63 +155,282 @@
     </div>
     <!-- End Sidebar -->
     <!-- Start Cart -->
-    <div class="cart">
+    <div class="order mt-5 mb-5">
       <div class="container">
-        <div
-          class="t-head d-flex align-items-center justify-content-center w-100"
-        >
-          <ul class="d-flex align-items-center justify-content-between">
-            <li>Product</li>
-            <li>Price</li>
-            <li>Quantity</li>
-            <li>Total</li>
-          </ul>
+        <ul class="head d-flex align-items-center justify-content-around">
+          <li style="flex: 0.2" class="text-center fw-bold">Product</li>
+          <li class="fw-bold">Price</li>
+          <li class="fw-bold">Quantity</li>
+          <li class="fw-bold">Total</li>
+        </ul>
+        <div class="row gap-4">
+          <div class="col-lg-12">
+            <div
+              class="border rounded orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+            >
+              <div class="pic d-flex align-items-center gap-3 flex-column flex-md-row">
+                <a
+                  class="rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                  href="#"
+                  ><i class="fa-solid fa-trash-can"></i
+                ></a>
+                <img class="rounded" src="../assets/img/cam.jpg" alt="" />
+                <p class="fw-bold">Camera Nikon</p>
+              </div>
+              <div class="price d-flex align-items-center justify-content-center gap-2 pt-1">
+                <div class="old" style="color: var(--second-color)">200 SAR</div>
+                <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
+              </div>
+              <div class="purchase-info">
+                <div class="input-group d-flex align-items-center gap-2">
+                  <span class="minus">
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
+                  <input type="number" min="0" value="1" />
+                  <span class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="total">
+                <span>200 SAR</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-12">
+            <div
+              class="orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+            >
+              <div class="pic d-flex align-items-center gap-3">
+                <a
+                  class="border border-danger rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                  href="#"
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+                <img class="rounded" src="./img/adv-2.jpeg" alt="" />
+              </div>
+              <div class="desc">
+                <h5>امتلك فيلا احلامك</h5>
+                <p class="text-secondary">
+                  اختار ليك ولاسرتك حياه جديده اختار لاديرا . لاديرا كمبوند بنيو
+                  زايد الحزام
+                </p>
+              </div>
+              <div class="total">
+                <h5>السعر: 150000 الف جنيه مصرى</h5>
+              </div>
+              <div class="status">
+                حالة الطلب:
+                <span class="text-warning fw-bold">قيد الانتظار</span>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-lg-12">
+            <div
+              class="orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+            >
+              <div class="pic d-flex align-items-center gap-3">
+                <a
+                  class="border border-danger rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                  href="#"
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+                <img class="rounded" src="./img/adv-4.jpeg" alt="" />
+              </div>
+              <div class="desc">
+                <h5>فيلا فخمة فى الشويفات</h5>
+                <p class="text-secondary">
+                  فيلا للبيع فى التجمع الخامس الشويفات الوصف لايكفى لابد من
+                  المعاينة للانبهار
+                </p>
+              </div>
+              <div class="total">
+                <h5>السعر: 150000 الف جنيه مصرى</h5>
+              </div>
+              <div class="status">
+                حالة الطلب: <span class="text-success fw-bold">مُباع</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div
+              class="orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+            >
+              <div class="pic d-flex align-items-center gap-3">
+                <a
+                  class="border border-danger rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                  href="#"
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+                <img class="rounded" src="./img/adv-5.jpeg" alt="" />
+              </div>
+              <div class="desc">
+                <h5>شارع مسجد الصحابة</h5>
+                <p class="text-secondary">
+                  بيت اربع ادوار كل شقة مساحته 260 متر مربع و 3 محلات علي
+                  ناصيتين كل دور
+                </p>
+              </div>
+              <div class="total">
+                <h5>السعر: 150000 الف جنيه مصرى</h5>
+              </div>
+              <div class="status">
+                حالة الطلب:
+                <span class="text-danger fw-bold d-inline-block">ألغيت</span>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
     <!-- End Cart -->
+    <!-- Start totals -->
+    <div class="totals">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="coupon">
+              <form action="">
+                <div class="form-group d-flex align-items-center">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Apply Coupon"
+                  />
+                  <button type="button" class="btn shop-btn" style="margin-left: -20px">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <!-- <div class="bill">
+              <div class="row">
+                <div class="col-4">
+                  <ul>
+                    <li>Cart Totals</li>
+                    <li>Shipping</li>
+                    <li>Subtotal</li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul>
+                    <li>Cart Totals</li>
+                    <li>
+                      <ul>
+                        <li>Shipping Fee</li>
+                        <li>Total ( Tax Excl.)</li>
+                        <li>Total ( Tax Incl.)</li>
+                        <li>Taxes</li>
+                        <li>
+                          Shipping Enter Your Address To View Shipping Options.
+                          Calculate Shipping
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Subtotal</li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul>
+                    <li>$128.70</li>
+                    <li>
+                      <ul>
+                        <li>Fee</li>
+                        <li>15 SAR</li>
+                        <li>15 SAR</li>
+                        <li>15 SAR</li>
+                        <li>15 SAR</li>
+                      </ul>
+                    </li>
+                    <li>162 SAR</li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+            <table class="d-none d-sm-table table table-bordered text-center text-md-start cart-table-box">
+              <thead>
+                <tr>
+                  <th scope="col" class="m-auto cart-table">Cart Totals</th>
+                  <th scope="col" class="m-auto"></th>
+                  <th scope="col" class="m-auto cart-table">128 SAR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Shipping</th>
+                  <th style="font-size: 14px" scope="col" class="m-auto lh-lg text-muted fw-normal">
+                    <p>Shipping Fee</p>
+                    <p>Total ( Tax Excl.)</p>
+                    <p>Total ( Tax Incl.)</p>
+                    <p>Taxes</p>
+                    <p>Shipping Enter Your Address To View Shipping Options. Calculate Shipping</p>
+                  </th>
+                  <th scope="col" class="m-auto"></th>
+                </tr>
+                <tr>
+                  <th scope="row">Subtotal</th>
+                  <td></td>
+                  <td>162 SAR</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- SMALL SCREENS -->
+            <div class="d-none d-sm-table text-center text-md-start cart-table-box">
+              <thead>
+                <tr>
+                  <th scope="col" class="m-auto cart-table">Cart Totals</th>
+                  <th scope="col" class="m-auto"></th>
+                  <th scope="col" class="m-auto cart-table">128 SAR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Shipping</th>
+                  <th style="font-size: 14px" scope="col" class="m-auto lh-lg text-muted fw-normal">
+                    <p>Shipping Fee</p>
+                    <p>Total ( Tax Excl.)</p>
+                    <p>Total ( Tax Incl.)</p>
+                    <p>Taxes</p>
+                    <p>Shipping Enter Your Address To View Shipping Options. Calculate Shipping</p>
+                  </th>
+                  <th scope="col" class="m-auto"></th>
+                </tr>
+                <tr>
+                  <th scope="row">Subtotal</th>
+                  <td></td>
+                  <td>162 SAR</td>
+                </tr>
+              </tbody>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End totals -->
     <!-- Start Footer -->
     <section class="footer py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 mb-3">
             <div class="ftco-footer d-flex gap-4 flex-column">
-              <div
-                style="width: fit-content"
-                class="pic d-flex align-items-center justify-content-center"
-              >
-                <img
-                  style="width: 130px"
-                  src="./assets/img/logo.png"
-                  alt=""
-                  class="mw-100"
-                />
+              <div style="width: fit-content" class="pic d-flex align-items-center justify-content-center">
+                <img style="width: 130px" src="./assets/img/logo.png" alt="" class="mw-100" />
               </div>
               <p class="text-white">
-                One of the best tourism companies in Saudi Arabia, which
-                provides many, many services to tourists from all countries of
-                the Arabian Gulf.
+                One of the best tourism companies in Saudi Arabia, which provides many, many services to tourists from
+                all countries of the Arabian Gulf.
               </p>
               <ul class="social-icons d-flex gap-3">
-                <a
-                  target="_blank"
-                  href="#"
-                  class="d-flex align-items-center justify-content-center social-icon"
-                >
+                <a target="_blank" href="#" class="d-flex align-items-center justify-content-center social-icon">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a
-                  target="_blank"
-                  href="#"
-                  class="d-flex align-items-center justify-content-center social-icon"
-                >
+                <a target="_blank" href="#" class="d-flex align-items-center justify-content-center social-icon">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a
-                  target="_blank"
-                  href="#"
-                  class="d-flex align-items-center justify-content-center social-icon"
-                >
+                <a target="_blank" href="#" class="d-flex align-items-center justify-content-center social-icon">
                   <i class="fa-brands fa-youtube"></i>
                 </a>
               </ul>
@@ -264,9 +441,7 @@
               <h2 class="text-white text-uppercase">Support</h2>
               <ul class="d-flex flex-column gap-3">
                 <li>
-                  <a href="../index.html" class="site-link">
-                    Help & Contact Us
-                  </a>
+                  <a href="../index.html" class="site-link"> Help & Contact Us </a>
                 </li>
                 <li>
                   <a href="./flights/" class="site-link">Return & Refunds</a>
@@ -309,21 +484,15 @@
             <div class="ftco-footer">
               <h2 class="text-white text-uppercase">HAVE A QUESTIONS?</h2>
               <div class="info pt-5 d-flex flex-column gap-4">
-                <div
-                  class="info-one d-flex align-items-center gap-3 text-white"
-                >
+                <div class="info-one d-flex align-items-center gap-3 text-white">
                   <i class="fa-solid fa-location-dot"></i>
                   <p>KSA</p>
                 </div>
-                <div
-                  class="info-one d-flex align-items-center gap-3 text-white"
-                >
+                <div class="info-one d-flex align-items-center gap-3 text-white">
                   <i class="fa-solid fa-phone"></i>
                   <p>+9661234567</p>
                 </div>
-                <div
-                  class="info-one d-flex align-items-center gap-3 text-white"
-                >
+                <div class="info-one d-flex align-items-center gap-3 text-white">
                   <i class="fa-solid fa-envelope"></i>
                   <p>WiDigit@gmail.com</p>
                 </div>
@@ -332,9 +501,7 @@
           </div>
         </div>
         <div class="copyright text-white">
-          <p class="text-center">
-            Copyright ©2024 All rights reserved by WiDigit
-          </p>
+          <p class="text-center">Copyright ©2024 All rights reserved by WiDigit</p>
         </div>
       </div>
     </section>

@@ -174,8 +174,7 @@ p {
   left: -100%;
   width: 25%;
   height: 100vh;
-  box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.15),
-    -10px 0px 15px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.15), -10px 0px 15px -5px rgba(0, 0, 0, 0.15);
   transition: 0.5s;
   overflow: scroll;
 }
@@ -424,13 +423,13 @@ p {
   height: 24px;
   padding: 4px;
 }
-.product-details .compare-wishlist a:hover svg {
+.compare-wishlist a:hover svg {
   background-color: var(--first-color);
   fill: white;
   border: 1px solid var(--first-color);
 }
-.product-details .purchase-info .input-group i {
-  background-color: #f5f5f5;
+.purchase-info .input-group i {
+  background-color: #f2f2f2;
   height: 40px;
   padding: 0 10px;
   display: flex;
@@ -853,320 +852,73 @@ p {
 }
 /* End Products */
 /* Start Cart */
-.whistlist-section .whistlist-table .eg-table2 {
-  width: 100%;
+/* Start Order */
+.order .orders .pic a {
+  transition: var(--main-transition);
+  color: var(--first-color);
 }
-.whistlist-section .whistlist-table .eg-table2 thead tr {
-  border-bottom: 1px solid #e9e7e7;
-}
-.whistlist-section .whistlist-table .eg-table2 thead tr th {
-  padding-bottom: 20px;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.54px;
-  text-transform: capitalize;
-}
-.whistlist-section .whistlist-table .eg-table2 thead tr th:nth-child(3),
-.whistlist-section .whistlist-table .eg-table2 thead tr th:nth-child(4),
-.whistlist-section .whistlist-table .eg-table2 thead tr th:nth-child(5) {
-  text-align: center;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr {
-  border-bottom: 1px solid #e9e7e7;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td {
-  padding: 30px 15px;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.45px;
-  text-transform: capitalize;
-  margin-bottom: 0;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .delete-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background-color: #f6f6f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .delete-icon i {
-  font-size: 20px;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .delete-icon:hover {
-  background-color: var(--primary-color1);
-  color: var(--white-color);
-}
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .delete-icon.md-down-device {
-  margin-left: auto;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .price del {
-  color: rgba(#222, 0.6000000238418579);
-  font-weight: 500;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .price {
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.45px;
-  text-transform: capitalize;
-  margin-bottom: 0;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td span {
-  color: #2b8872;
-  font-family: var(--font-Jost);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.32px;
-  text-transform: capitalize;
-  white-space: nowrap;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .quantity-counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .quantity-counter a {
-  width: 40px;
-  height: 40px;
-  background-color: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-color1);
-}
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .quantity-counter
-  .quantity__input {
-  max-width: 58px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid var(--primary-color1);
-  text-align: center;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.48px;
-}
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .quantity-counter.two
-  a {
-  height: 30px;
-}
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .quantity-counter.two
-  .quantity__input {
-  height: 30px;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td:nth-child(3),
-.whistlist-section .whistlist-table .eg-table2 tbody tr td:nth-child(4),
-.whistlist-section .whistlist-table .eg-table2 tbody tr td:nth-child(5) {
-  text-align: center;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td.md-down-device {
-  display: block;
-  width: 100%;
-  text-align: right;
-  position: relative;
-  padding: 15px;
-}
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td.md-down-device::before {
-  content: attr(data-label);
-  position: absolute;
-  left: 15px;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td.sm-down-device {
-  padding-left: 40%;
-}
-.whistlist-section .whistlist-table .eg-table2 tbody tr td .table-product {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .table-product
-  .product-img
-  img {
+
+.order .orders .pic img {
   width: 100px;
   height: 100px;
+  border: 5px solid white;
 }
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .table-product
-  .product-content
-  h6
-  a {
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-transform: capitalize;
+
+.order .orders .desc p {
+  width: 200px;
+  font-size: 12px;
 }
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .table-product.md-down-device {
-  justify-content: flex-end;
+@media (max-width: 992px) {
+  .order .orders {
+    gap: 3rem;
+  }
+
+  .order .orders h5 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  .order .orders .pic img {
+    width: 100px;
+  }
+
+  .order .orders .status {
+    width: 228px;
+    font-size: 0.7rem;
+  }
 }
-.whistlist-section
-  .whistlist-table
-  .eg-table2
-  tbody
-  tr
-  td
-  .table-product.sm-down-device {
-  flex-wrap: wrap;
-  gap: 10px;
+@media (max-width: 768px) {
+  .order .orders {
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .order .orders .pic a {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .order .orders .pic img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .order .orders .desc p {
+    font-size: 16px;
+    width: 225px;
+  }
+
+  .order .orders h5,
+  .order .orders .status {
+    font-size: inherit;
+  }
 }
-.whistlist-section .coupon-area .cart-coupon-input h5 {
-  font-weight: 700;
-  font-size: 22px;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  margin-bottom: 25px;
-}
-.whistlist-section .coupon-area .cart-coupon-input .form-inner input {
-  height: 49px;
-}
-.whistlist-section .coupon-area .cart-coupon-input .form-inner button {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.whistlist-section .coupon-area .cart-coupon-input .form-inner .primary-btn1 {
-  padding: 10px 30px;
-}
-.whistlist-section .cart-table {
-  width: 100%;
-  border: 1px solid #e9e7e7;
-  margin-bottom: 40px;
-}
-.whistlist-section .cart-table thead tr {
-  border-bottom: 1px solid #e9e7e7;
-}
-.whistlist-section .cart-table thead tr th {
-  border: 1px solid #e9e7e7;
-  padding: 15px;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.54px;
-  text-transform: capitalize;
-  text-align: center;
-}
-.whistlist-section .cart-table tbody tr {
-  border-bottom: 1px solid #e9e7e7;
-}
-.whistlist-section .cart-table tbody tr td {
-  border: 1px solid #e9e7e7;
-  padding: 15px;
-  color: var(--primary-color1);
-  font-family: var(--font-Jost);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.45px;
-  text-transform: capitalize;
-  margin-bottom: 0;
-  vertical-align: top;
-}
-.whistlist-section .cart-table tbody tr td:nth-child(1) {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-}
-.whistlist-section .cart-table tbody tr td:nth-child(3) {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-}
-.whistlist-section .cart-table tbody tr td .cost-list li {
-  font-family: var(--font-Jost);
-  font-size: 15px;
-  font-weight: 400;
-  color: var(--text-color2);
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-.whistlist-section .cart-table tbody tr td .cost-list li a {
-  color: var(--primary-color1);
-  font-weight: 500;
-  text-decoration: underline;
-}
-.whistlist-section .cart-table tbody tr td .single-cost li {
-  font-family: var(--font-Jost);
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--primary-color1);
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
+
+/* End Order *
 
 /* End Cart */
 /* Start Footer */
