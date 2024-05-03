@@ -1005,6 +1005,28 @@ p {
   color: white;
 }
 /* End Form */
+/* Start Compare */
+.compare .pic {
+  width: 300px;
+  height: 266px;
+}
+.compare .pic img {
+  object-fit: cover;
+}
+.compare i {
+  color: var(--first-color);
+  cursor: pointer;
+}
+.compare i:hover {
+  color: var(--fourth-color);
+}
+.compare .fa-star {
+  color: #ffb067;
+}
+.compare table td {
+  text-align: center;
+}
+/* End Compare */
 /* Start Footer */
 .footer {
   background-color: var(--second-color);
