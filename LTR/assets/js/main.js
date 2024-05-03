@@ -64,16 +64,16 @@ function slideImage() {
 
 window.addEventListener("resize", slideImage);
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const input = document.querySelector(".input-group input");
-//   const plus = document.querySelector(".input-group .plus");
-//   const minus = document.querySelector(".input-group .minus");
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.querySelector(".input-group input");
+  const plus = document.querySelector(".input-group .plus");
+  const minus = document.querySelector(".input-group .minus");
 
-//   plus.addEventListener("click", function () {
-//     input.stepUp();
-//   });
+  plus.addEventListener("click", function () {
+    input.stepUp();
+  });
 
-//   minus.addEventListener("click", function () {
-//     input.stepDown();
-//   });
-// });
+  minus.addEventListener("click", function () {
+    input.stepDown();
+  });
+});
