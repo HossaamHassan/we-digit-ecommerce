@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style-rtl.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile | We-Digit</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="container d-flex flex-column flex-lg-row flex-md-row">
+          <div style="flex: 1" class="all d-flex justify-content-between">
+            <div class="cart d-flex gap-4 align-items-center justify-content-center">
+              <div style="cursor: pointer" class="list" id="bar">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+            <a href="./index.html" class="logo d-flex gap-2 align-items-center">
+              <div class="pic">
+                <img style="width: 130px" class="mw-100" src="../assets/img/logo.png" alt="" />
+              </div>
+            </a>
+            <div class="search d-flex align-items-center justify-content-center">
+              <div class="form-outline" style="flex: 1" data-mdb-input-init>
+                <input
+                  type="search"
+                  id="form1"
+                  class="form-control"
+                  placeholder="Search all Products"
+                  aria-label="Search"
+                />
+              </div>
+              <button type="button" class="btn btn-primary text-uppercase" data-mdb-ripple-init>Search</button>
+            </div>
+            <div class="icons d-flex align-items-center gap-3">
+              <a href="#" class="text-black fw-bold"> English </a>
+              <a href="./login/" class="user d-flex align-items-center">
+                <i class="fa-regular fa-user text-black"></i>
+              </a>
+              <div class="cart-shopping position-relative d-flex align-items-center">
+                <img src="../assets/img/shopping-bag.png" class="mw-100" alt="" />
+                <span class="icon-cart-span">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-two">
+      <div class="container">
+        <ul class="d-flex align-items-center justify-content-center gap-3 py-3 mb-0">
+          <li class="link-two">
+            <a href="../index.html" class="text-uppercase"> Home </a>
+          </li>
+          <li>
+            <a href="#" class="text-uppercase"> About Us</a>
+          </li>
+          <li>
+            <a href="../contact-us/" class="text-uppercase"> Contact Us </a>
+          </li>
+          <li>
+            <a href="#" class="text-uppercase"> Blog </a>
+          </li>
+          <li>
+            <a href="../products/" class="text-uppercase"> Special Offer </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start Paths -->
+    <div class="paths py-4">
+      <div class="container">
+        <p style="gap: 0.5rem" class="d-flex align-items-center">
+          <span>Home</span> <i class="fa-solid fa-chevron-right"></i> <span>Cameras</span>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Sony</span>
+        </p>
+      </div>
+    </div>
+    <!-- End Paths -->
+    <!-- Start Sidebar -->
+    <div class="sidebar">
+      <div class="content">
+        <div class="close d-flex justify-content-between align-items-center border-bottom p-2">
+          <div class="pic">
+            <img style="width: 100px" class="mw-100" src="../assets/img/logo.png" alt="" />
+          </div>
+          <i class="fa-solid fa-x m-0" id="close"></i>
+        </div>
+        <ul class="d-flex flex-column pe-2 p-0">
+          <li>
+            <div class="search d-flex align-items-center justify-content-center m-auto">
+              <div class="form-outline position-relative side-link" style="flex: 1" data-mdb-input-init>
+                <input
+                  style="border: none"
+                  type="search"
+                  id="form1"
+                  class="form-control"
+                  placeholder="Search all Products"
+                  aria-label="Search"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass position-absolute"
+                  style="
+                    right: 1rem;
+                    top: 5px;
+                    border: none !important;
+                    border-radius: 0;
+                    border-left: 1px solid var(--second-color) !important;
+                  "
+                ></i>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="side-link">Home</a></li>
+          <!-- Contenedor -->
+          <li>
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link side-link"><span>Accessories</span><i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                  <li><a href="#">Lorem</a></li>
+                  <li><a href="#">Lorem</a></li>
+                  <li><a href="#">Lorem</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="link side-link"><span>Cameras</span><i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                  <li><a href="#">Lorem</a></li>
+                  <li><a href="#">Lorem</a></li>
+                  <li><a href="#">Lorem</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+    <!-- Start Profile -->
+    <div class="container mt-5 pb-5">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="simple-tab-0"
+            data-bs-toggle="tab"
+            href="#simple-tabpanel-0"
+            role="tab"
+            aria-controls="simple-tabpanel-0"
+            aria-selected="true"
+            >My Profile</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="simple-tab-1"
+            data-bs-toggle="tab"
+            href="#simple-tabpanel-3"
+            role="tab"
+            aria-controls="simple-tabpanel-1"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            My Orders</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="simple-tab-1"
+            data-bs-toggle="tab"
+            href="#simple-tabpanel-1"
+            role="tab"
+            aria-controls="simple-tabpanel-1"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            Wishlist</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content pt-3" id="tab-content">
+        <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+          <h2 class="mb-3">Profile Overview</h2>
+          <div class="info p-4 border rounded">
+            <h3>General Info</h3>
+            <div class="form-container w-100">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form action="/" class="contact-form pt-3">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input
+                          id="firstName"
+                          class="form-control"
+                          type="text"
+                          placeholder="First Name"
+                          required=""
+                        /><br />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          id="lastName"
+                          class="form-control"
+                          type="text"
+                          placeholder="Last Name"
+                          required=""
+                        /><br />
+                      </div>
+                      <div class="col-lg-6">
+                        <input id="email" class="form-control" type="email" placeholder="Email" required="" /><br />
+                      </div>
+                      <div class="col-lg-12">
+                        <a
+                          href="../address/"
+                          style="width: fit-content; color: white !important"
+                          class="btn shop-btn px-3 d-flex align-items-center justify-content-center"
+                        >
+                          Update Profile
+                        </a>
+                        <br />
+                      </div>
+                      <div class="col-lg-12">
+                        <input
+                          style="width: fit-content; color: white !important; width: 138px"
+                          id="email"
+                          class="form-control btn shop-btn px-3 bg-black"
+                          type="submit"
+                          value="Log Out"
+                        /><br />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="simple-tabpanel-3" role="tabpanel" aria-labelledby="simple-tab-1">
+          <!-- Start Cart -->
+          <h2 class="mb-3">My Orders</h2>
+          <div class="order">
+            <ul class="head d-flex align-items-center justify-content-around">
+              <li style="flex: 0.3" class="text-center fw-bold">Product</li>
+              <li class="fw-bold">Status</li>
+              <li class="fw-bold">Delivery Expected By</li>
+            </ul>
+            <div class="row gap-4">
+              <div class="col-lg-12">
+                <div
+                  class="border rounded orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+                >
+                  <div class="pic d-flex align-items-center gap-3 flex-column flex-md-row">
+                    <a
+                      class="rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                      href="#"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                    <img class="rounded" src="../assets/img/cam.jpg" alt="" />
+                    <p class="fw-bold">Camera Nikon</p>
+                  </div>
+                  <div class="price d-flex align-items-center justify-content-center gap-2 pt-1">
+                    <div class="old fw-bold" style="color: var(--fourth-color)">In-Transit</div>
+                  </div>
+                  <div class="total">
+                    <span class="fw-bold">24 December 2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Cart -->
+        </div>
+        <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+          <!-- Start Cart -->
+          <h2 class="mb-3">Wishlist</h2>
+          <div class="order">
+            <ul class="head d-flex align-items-center justify-content-around gap-4">
+              <li style="flex: 0.14" class="text-center fw-bold">Product</li>
+              <li class="text-center fw-bold">Price</li>
+              <li class="text-center fw-bold">Stock</li>
+              <li></li>
+            </ul>
+            <div class="row gap-4">
+              <div class="col-lg-12">
+                <div
+                  class="border rounded orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+                >
+                  <div class="pic d-flex align-items-center gap-3 flex-column flex-md-row">
+                    <a
+                      class="rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                      href="#"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                    <img class="rounded" src="../assets/img/cam.jpg" alt="" />
+                    <p class="fw-bold">Camera Nikon</p>
+                  </div>
+                  <div class="price d-flex align-items-center justify-content-center gap-2 pt-1">
+                    <div class="old" style="color: var(--second-color)">200 SAR</div>
+                    <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
+                  </div>
+                  <div class="status"><span class="text-success fw-bold">In stock</span></div>
+                  <button style="width: fit-content" class="btn shop-btn d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div
+                  class="border rounded orders p-2 d-flex justify-content-around align-items-center rounded position-relative"
+                >
+                  <div class="pic d-flex align-items-center gap-3 flex-column flex-md-row">
+                    <a
+                      class="rounded-circle p-1 main-btn cursor-pointer d-flex align-items-center justify-content-center"
+                      href="#"
+                      ><i class="fa-solid fa-trash-can"></i
+                    ></a>
+                    <img class="rounded" src="../assets/img/cam.jpg" alt="" />
+                    <p class="fw-bold">Camera Nikon</p>
+                  </div>
+                  <div class="price d-flex align-items-center justify-content-center gap-2 pt-1">
+                    <div class="old" style="color: var(--second-color)">200 SAR</div>
+                    <div class="old" style="text-decoration: line-through; color: var(--fourth-color)">200 SAR</div>
+                  </div>
+                  <div class="status"><span class="text-danger fw-bold">Out of stock</span></div>
+                  <button style="width: fit-content" class="btn shop-btn d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Cart -->
+        </div>
+      </div>
+    </div>
+    <!-- End Profile -->
+    <!-- Start Footer -->
+    <section class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <div class="ftco-footer d-flex gap-4 flex-column">
+              <div style="width: fit-content" class="pic d-flex align-items-center justify-content-center">
+                <img style="width: 130px" src="./assets/img/logo.png" alt="" class="mw-100" />
+              </div>
+              <p class="text-white">
+                One of the best tourism companies in Saudi Arabia, which provides many, many services to tourists from
+                all countries of the Arabian Gulf.
+              </p>
+              <ul class="social-icons d-flex gap-3">
+                <a target="_blank" href="#" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a target="_blank" href="#" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="#" class="d-flex align-items-center justify-content-center social-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 wd-10 mb-3">
+            <div class="ftco-footer d-flex gap-4 flex-column">
+              <h2 class="text-white text-uppercase">Support</h2>
+              <ul class="d-flex flex-column gap-3">
+                <li>
+                  <a href="../index.html" class="site-link"> Help & Contact Us </a>
+                </li>
+                <li>
+                  <a href="./flights/" class="site-link">Return & Refunds</a>
+                </li>
+                <li>
+                  <a href="./flights/" class="site-link"> Online Stores</a>
+                </li>
+                <li>
+                  <a href="../flights/" class="site-link"> Privacy Policy </a>
+                </li>
+                <li>
+                  <a href="../contact/" class="site-link">Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 wd-10 mb-3">
+            <div class="ftco-footer d-flex gap-4 flex-column">
+              <h2 class="text-white text-uppercase">Company</h2>
+              <ul class="d-flex flex-column gap-3">
+                <li>
+                  <a href="../index.html" class="site-link"> What We Do </a>
+                </li>
+                <li>
+                  <a href="./flights/" class="site-link">Gift Offers</a>
+                </li>
+                <li>
+                  <a href="./flights/" class="site-link"> Latest Offers</a>
+                </li>
+                <li>
+                  <a href="../flights/" class="site-link"> F.A.Q </a>
+                </li>
+                <li>
+                  <a href="../contact/" class="site-link">Our Brand</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="ftco-footer">
+              <h2 class="text-white text-uppercase">HAVE A QUESTIONS?</h2>
+              <div class="info pt-5 d-flex flex-column gap-4">
+                <div class="info-one d-flex align-items-center gap-3 text-white">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>KSA</p>
+                </div>
+                <div class="info-one d-flex align-items-center gap-3 text-white">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+9661234567</p>
+                </div>
+                <div class="info-one d-flex align-items-center gap-3 text-white">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>WiDigit@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-white">
+          <p class="text-center">Copyright ©2024 All rights reserved by WiDigit</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
